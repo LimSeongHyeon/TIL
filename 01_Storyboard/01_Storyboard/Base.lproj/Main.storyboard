@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Quote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2y-yP-1gb">
+                                <rect key="frame" x="24" y="83" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rV-uo-Cs1" userLabel="Quote View">
+                                <rect key="frame" x="20" y="124" width="353" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k01-ki-4Pl" userLabel="Quote Name Label">
+                                        <rect key="frame" x="20" y="180" width="313" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK3-Bx-23C" userLabel="Quote Title Label">
+                                        <rect key="frame" x="20" y="10" width="313" height="150"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="XK3-Bx-23C" firstAttribute="top" secondItem="8rV-uo-Cs1" secondAttribute="top" constant="10" id="3uz-kp-87c"/>
+                                    <constraint firstAttribute="trailing" secondItem="XK3-Bx-23C" secondAttribute="trailing" constant="20" id="E2X-Jc-1a3"/>
+                                    <constraint firstItem="XK3-Bx-23C" firstAttribute="leading" secondItem="8rV-uo-Cs1" secondAttribute="leading" constant="20" id="EWw-Vf-nr4"/>
+                                    <constraint firstAttribute="bottom" secondItem="k01-ki-4Pl" secondAttribute="bottom" constant="20" id="M54-pq-qqt"/>
+                                    <constraint firstItem="k01-ki-4Pl" firstAttribute="top" secondItem="XK3-Bx-23C" secondAttribute="bottom" constant="20" id="efN-ej-E0u"/>
+                                    <constraint firstAttribute="height" constant="200" id="niB-er-Dfo"/>
+                                    <constraint firstAttribute="trailing" secondItem="k01-ki-4Pl" secondAttribute="trailing" constant="20" id="oVP-9y-rbO"/>
+                                    <constraint firstItem="k01-ki-4Pl" firstAttribute="leading" secondItem="8rV-uo-Cs1" secondAttribute="leading" constant="20" id="s9D-gy-lJK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvN-8b-iQ6" userLabel="Change Quote Button">
+                                <rect key="frame" x="166.66666666666666" y="344" width="60" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Iml-v0-ati"/>
+                                    <constraint firstAttribute="height" constant="35" id="UUq-AG-9p8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="tabChangeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgJ-9f-r6G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G2y-yP-1gb" secondAttribute="trailing" constant="24" id="6M5-Lh-MJj"/>
+                            <constraint firstItem="JvN-8b-iQ6" firstAttribute="centerX" secondItem="8rV-uo-Cs1" secondAttribute="centerX" id="Ncb-ah-L5b"/>
+                            <constraint firstItem="8rV-uo-Cs1" firstAttribute="top" secondItem="G2y-yP-1gb" secondAttribute="bottom" constant="20" id="Xle-QY-Hc2"/>
+                            <constraint firstItem="JvN-8b-iQ6" firstAttribute="top" secondItem="8rV-uo-Cs1" secondAttribute="bottom" constant="20" id="c6E-mL-8f6"/>
+                            <constraint firstItem="8rV-uo-Cs1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hjb-mg-6BE"/>
+                            <constraint firstItem="G2y-yP-1gb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ub6-PR-HZo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8rV-uo-Cs1" secondAttribute="trailing" constant="20" id="veV-nJ-aii"/>
+                            <constraint firstItem="G2y-yP-1gb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="z80-Cr-0jB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="quoteTitleLabel" destination="XK3-Bx-23C" id="gu1-rM-HIJ"/>
+                        <outlet property="quoteView" destination="8rV-uo-Cs1" id="NbO-tN-Gnf"/>
+                        <outlet property="quoteWriterLabel" destination="k01-ki-4Pl" id="BcX-UW-d5G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
