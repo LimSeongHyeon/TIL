@@ -60,34 +60,22 @@ class ViewController: UIViewController
 		}
 	}
 	
-	@IBAction func tapAddButton(_ sender: UIButton)
-	{
-		print(#function)
-		self.operation(.add)
-	}
 	
-	@IBAction func tapSubButton(_ sender: UIButton)
+	@IBAction func tapOperatorButton(_ sender: UIButton)
 	{
 		print(#function)
-		self.operation(.sub)
-	}
-	
-	@IBAction func tapMulButton(_ sender: UIButton)
-	{
-		print(#function)
-		self.operation(.mul)
-	}
-	
-	@IBAction func tapDivButton(_ sender: UIButton)
-	{
-		print(#function)
-		self.operation(.div)
-	}
-	
-	@IBAction func tapEqualButton(_ sender: UIButton)
-	{
-		print(#function)
-		self.operation(self.currentOperator)
+		if let operation = sender.accessibilityLabel
+		{
+			switch operation
+			{
+				case "add": self.operation(.add)
+				case "sub": self.operation(.sub)
+				case "mul": self.operation(.mul)
+				case "div": self.operation(.div)
+				case "equal": self.operation(self.currentOperator)
+				default: break
+			}
+		}
 	}
 	
 	func operation(_ operation: Operator)

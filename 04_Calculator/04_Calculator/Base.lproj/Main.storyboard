@@ -53,6 +53,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJg-ni-7WK">
                                                         <rect key="frame" x="260.33333333333331" y="0.0" width="81.666666666666686" height="81.666666666666671"/>
+                                                        <accessibility key="accessibilityConfiguration" label="equal"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="GJg-ni-7WK" secondAttribute="height" id="jQK-F1-YF8"/>
                                                         </constraints>
@@ -65,7 +66,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="tapEqualButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fU6-ck-5Tz"/>
+                                                            <action selector="tapOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3EE-f1-3Yg"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -126,6 +127,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYX-fK-0KG">
                                                         <rect key="frame" x="260.33333333333331" y="0.0" width="81.666666666666686" height="82"/>
+                                                        <accessibility key="accessibilityConfiguration" label="add"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="uYX-fK-0KG" secondAttribute="height" id="KeU-n1-45m"/>
                                                         </constraints>
@@ -138,7 +140,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="tapAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JVG-Yi-zMM"/>
+                                                            <action selector="tapOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajk-9G-rh9"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -199,6 +201,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOy-Rw-qOA">
                                                         <rect key="frame" x="260.33333333333331" y="0.0" width="81.666666666666686" height="81.666666666666671"/>
+                                                        <accessibility key="accessibilityConfiguration" label="sub"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="AOy-Rw-qOA" secondAttribute="height" id="56b-Zu-D6x"/>
                                                         </constraints>
@@ -211,7 +214,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="tapSubButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auF-qG-TwZ"/>
+                                                            <action selector="tapOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5h-0j-ctQ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -272,6 +275,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-ce-Zu0">
                                                         <rect key="frame" x="260.33333333333331" y="0.0" width="81.666666666666686" height="81.666666666666671"/>
+                                                        <accessibility key="accessibilityConfiguration" label="mul"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Rt3-ce-Zu0" secondAttribute="height" id="lnN-3C-KBf"/>
                                                         </constraints>
@@ -284,7 +288,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="tapMulButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="da1-Td-dpf"/>
+                                                            <action selector="tapOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9E-bH-Jro"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -325,6 +329,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Un-TN-lbd">
                                                         <rect key="frame" x="260.33333333333331" y="0.0" width="81.666666666666686" height="81.666666666666671"/>
+                                                        <accessibility key="accessibilityConfiguration" label="div"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="8Un-TN-lbd" secondAttribute="height" id="ikE-Vw-fBw"/>
                                                         </constraints>
@@ -337,7 +342,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="tapDivButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQe-vX-Vcp"/>
+                                                            <action selector="tapOperatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1d-vZ-cr2"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
