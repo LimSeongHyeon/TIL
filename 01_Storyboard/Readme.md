@@ -16,7 +16,7 @@ SwiftUI를 통해서 iOS 개발에 입문한 나로서는 UIKit을 사용하는 
 
 </br>
 
-<img src='https://github.com/LimSeongHyeon/TIL/blob/main/Image/01_Storyboard.gif'>
+<img src='https://github.com/LimSeongHyeon/TIL/blob/main/resource/Image/01_Storyboard.gif'>
 
 
 
